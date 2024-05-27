@@ -8,9 +8,12 @@
 <link rel="shortcut icon" href="./src/img/20240523_212659.jpg" type="image/x-icon" />
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <script src="https://kit.fontawesome.com/8f1b7a69f3.js" crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<script src="tema.js" defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></scrip> -->
 </head>
 <body>
+<!-- <i class="bi bi-brightness-high-fill" id="toggleDark"></i> -->
 <div class="profile zoom">
     <img src="./src/img/20240523_212659.jpg" class="prof">
     <h3>SPERO 24F<img src="./src/img/centang.png" class="cntg"></h3>
@@ -20,58 +23,58 @@
 <div class="catalog">
   <div class="box medun">
     <div class="conten">
-     <a href="./src/ALBUM/img/bukber9f.jpg"><img class="top" src="./src/ALBUM/img/bukber9f.jpg"></a>
+     <a onclick="redirectTo('./src/ALBUM/img/bukber9f.jpg')"><img class="top" src="./src/ALBUM/img/bukber9f.jpg"></a>
    <h7>Album Foto 9F</h7>
     <p>Buka Bersama 9F</p>
-   <a class="soon" href="./src/ALBUM/bukber9f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/bukber9f/index.html')">Lengkap</a>
     </div> 
   </div>
   <div class="box medun">
     <div class="conten">
-     <a href="./src/ALBUM/img/thumbjalan9f.jpg"><img class="top" src="./src/ALBUM/img/thumbjalan9f.jpg"></a>
+     <a onclick="redirectTo('./src/ALBUM/img/thumbjalan9f.jpg')"><img class="top" src="./src/ALBUM/img/thumbjalan9f.jpg"></a>
    <h7>Album Foto 9F</h7>
     <p>Buka Bersama 9F</p>
-   <a class="soon" href="./src/ALBUM/jalansht9f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/jalansht9f/index.html')">Lengkap</a>
     </div> 
   </div>
     <div class="box medun">
       <div class="conten">
-        <a href="./src/ALBUM/img/fotbarran9f.jpg"><img src="./src/ALBUM/img/fotbarran9f.jpg"/></a>
+        <a onclick="redirectTo('./src/ALBUM/img/fotbarran9f.jpg')"><img src="./src/ALBUM/img/fotbarran9f.jpg"/></a>
    <h7>Album Foto 9F</h7>
     <p>Foto Random 9F</p>
-   <a class="soon" href="./src/ALBUM/random9f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/random9f/index.html')">Lengkap</a>
       </div>
     </div>
     <div class="box medun">
       <div class="conten">
-        <a href="./src/ALBUM/img/thumbjalan9f.jpg"><img src="./src/ALBUM/img/thumbjalan9f.jpg"></a>
+        <a onclick="redirectTo('./src/ALBUM/img/thumbjalan9f.jpg')"><img src="./src/ALBUM/img/thumbjalan9f.jpg"></a>
       <h7>Album Foto 9F</h7>
     <p>Jalan Sehat 9F</p>
-   <a class="soon" href="./src/ALBUM/jalansht9f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/jalansht9f/index.html')">Lengkap</a>
       </div>
     </div>
     <div class="box medun">
       <div class="conten">
-        <a href="./src/ALBUM/img/fotorandom8f.jpg"><img src="./src/ALBUM/img/fotorandom8f.jpg"></a>
+        <a onclick="redirectTo('./src/ALBUM/img/fotorandom8f.jpg')"><img src="./src/ALBUM/img/fotorandom8f.jpg"></a>
       <h7>Album Foto 8F</h7>
     <p>Foto Random 8F</p>
-   <a class="soon" href="./src/ALBUM/random8f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/random8f/index.html')">Lengkap</a>
       </div>
     </div>
     <div class="box medun">
       <div class="conten">
-        <a href="./src/ALBUM/img/hariguru8f.jpg"><img src="./src/ALBUM/img/hariguru8f.jpg"></a>
+        <a onclick="redirectTo('./src/ALBUM/img/hariguru8f.jpg')"><img src="./src/ALBUM/img/hariguru8f.jpg"></a>
       <h7>Album Foto 8F</h7>
     <p>Hari Guru 8F</p>
-   <a class="soon" href="./src/ALBUM/hargru8f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/hargru8f/index.html')">Lengkap</a>
       </div>
     </div>
     <div class="box medun">
       <div class="conten">
-        <a href ="./src/ALBUM/img/fotbar7f.jpg"><img src="./src/ALBUM/img/fotbar7f.jpg"></a>
+        <a onclick="redirectTo('./src/ALBUM/img/fotbar7f.jpg')"><img src="./src/ALBUM/img/fotbar7f.jpg"></a>
       <h7>Album Foto 7F</h7>
     <p>Fotbar Pertama 7F</p>
-   <a class="soon" href="./src/ALBUM/fotbar7f/index.html">Lengkap</a>
+   <a class="soon" onclick="redirectTo('./src/ALBUM/fotbar7f/')">Lengkap</a>
       </div>
     </div>
 </div>
@@ -100,15 +103,15 @@
 
 
 <div class="description fade-in4">
-    <a href="./src/ALBUM/img/thumbnail.jpg"><img src="./src/ALBUM/img/thumbnail.jpg"></a>
+    <img src="./src/ALBUM/img/thumbnail.jpg" onclick="redirectTo('./src/ALBUM/img/thumbnail.jpg')">
     <h7>Website ini Bukan untuk memamerkan tapi untuk Menjadi Kenangan di masa depan, Berawal Dari Saling Tidak Kenal Dan akhirnya Lulus Dengan Penuh Kenangan.<br><span>Semangat Berjuang Menjapai Cita" Kawan"</span></h7>
 </div>
 
 <div class="media fade-in">
   <p>Media Social Kami</p>
-  <div class="medsos fade-in1"><a href="https://instagram.com/@nineepep"><i class="fa-brands fa-instagram"></i> Instagram</a>
+  <div class="medsos fade-in1"><a onclick="redirectTo('https://instagram.com/thisf24.spr')"><i class="fa-brands fa-instagram"></i> Instagram</a>
   </div>
-  <div class="medsos fade-in3"><a href="https://tiktok.com/@nineepep"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+  <div class="medsos fade-in3"><a onclick="redirectTo('https://tiktok.com/@thisninef.spr')"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
 </div>
 </div>
 

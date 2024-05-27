@@ -22,9 +22,41 @@
         </div>
     </section>
 <script type="text/javascript" charset="utf-8">
+
   function redirectTo(url) {
-            window.location.href = url;
-        }
+
+  window.location.href = url;
+}
+
+function disableContextMenu(event) {
+  event.preventDefault();
+}
+
+function addCustomStyle() {
+  var styleElement = document.createElement('style');
+  var cssCode = `
+    .product img {
+      user-select: none;
+    }
+  `;
+
+  styleElement.type = 'text/css';
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = cssCode;
+  } else {
+    styleElement.appendChild(document.createTextNode(cssCode));
+  }
+
+  document.head.appendChild(styleElement);
+
+  var images = document.querySelectorAll('.product img');
+  images.forEach(function(image) {
+    image.addEventListener('contextmenu', disableContextMenu);
+  });
+}
+
+// Panggil fungsi addCustomStyle untuk menambahkan kode CSS dan menangani event context menu
+addCustomStyle();
 </script>
 </body>
 </html>

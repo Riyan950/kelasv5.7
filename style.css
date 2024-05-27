@@ -3,6 +3,15 @@ body {
     font-family: Arial, sans-serif; /* Font yang mudah dibaca */
 }
 
+#toggleDark {
+  font-size: 40px;
+  background-color: #4fcca3;
+  padding: 1px 5px 6px 6px;
+  display: inline-block;
+  border-radius: 10px;
+  position: absolute;
+}
+
 .profile {
     text-align: center;
     margin-top: 20px;
@@ -36,6 +45,7 @@ body {
 .catalog {
     display: flex;
     overflow-x: auto; /* Scroll ke samping */
+    scroll-behavior: smooth;
 }
 
 .box {
@@ -46,11 +56,14 @@ body {
     border-radius: 12px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Bayangan */
     position: relative;
+    scroll-behavior: smooth;
 }
 
 .conten {
   padding: 5px;
   margin-bottom: 4px;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 .conten a{
@@ -89,6 +102,13 @@ body {
   border-radius: 5px;
   margin-left: 120px;
   font-family: Times New Roman;
+  transition: .4s ease-in-out;
+}
+
+.soon:hover {
+  color: #1a1a1a;
+  background-color: #4fcca3;
+  box-shadow: 0 0 10px #f8f8f8;
 }
 
 .song {
@@ -187,6 +207,7 @@ body {
   background-color: white;
   border-radius: 12px;
   box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 1.3s ease;
 }
 
 .medsos a{
@@ -203,6 +224,7 @@ body {
   user-select: none;
   webkit-user-select: none;
   outline: none;
+  transition: 1s ease;
 }
 
 .description span {
@@ -321,5 +343,16 @@ footer {
   to{
     opacity: 1;
     transform: scale(1);
+  }
+}
+.p {
+  animation: top 5s ease;
+}
+@keyframes top {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }

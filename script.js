@@ -89,4 +89,35 @@ favSongs.forEach(function(favSong) {
          element.classList.add('fade-out');
        });
      }, 2000);
-    
+
+function redirectTo(url) {
+  window.location.href = url;
+}
+
+function disableContextMenu(event) {
+  event.preventDefault();
+}
+
+function addCustomStyle() {
+  var styleElement = document.createElement('style');
+  var images = document.querySelectorAll('.box a, .soon, .description img, .cntg, .prof');
+  images.forEach(function(image) {
+    image.addEventListener('contextmenu', disableContextMenu);
+  });
+}
+
+// Panggil fungsi addCustomStyle untuk menambahkan kode CSS dan menangani event context menu
+addCustomStyle();
+// smooth scrol .catalog
+function smoothScroll() {
+  var element = document.querySelector('.catalog');
+  element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+}
+
+// smooth scrol all
+function selectAllElements() {
+  var elements = document.querySelectorAll('body *'); // Memilih semua elemen dalam body
+  console.log(elements);
+}
+
+selectAllElements();
